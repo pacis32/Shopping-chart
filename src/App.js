@@ -6,6 +6,7 @@ function App() {
   return (
     <div >
      <h2>Hello Shoppers</h2>
+     <Tshirt/>
     </div>
   );
 }
