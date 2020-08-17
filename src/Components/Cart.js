@@ -1,11 +1,17 @@
 import React from 'react';
 
-import './App.css';
 
-function Cart() {
+function Cart({cartList}) {
   return (
     <div >
-     <h2>Hello Cart</h2>
+     {cartList && cartList.length && cartList.map((item,index)=>{
+       return(
+         <div>
+           <h2>Name:</h2>{item.title}
+           </div>
+       )
+     })
+    }
     
     </div>
   );
