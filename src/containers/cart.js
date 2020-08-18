@@ -9,7 +9,7 @@ import {connect} from 'react-redux'
     }
 
     componentDidMount(){
-        fetchCartList("https://www.scorebat.com/video-api/v1/",this.props.dispatch);
+        fetchCartList("hhttp://localhost:8000/products",this.props.dispatch);
     }
 
     componentDidUpdate(){
