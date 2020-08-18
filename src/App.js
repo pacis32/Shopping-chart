@@ -15,6 +15,7 @@ import { Switch, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+
 const store = createStore(
   rootReducer,
   composeWithDevTools()
@@ -36,6 +37,17 @@ const App =()=> {
           <Route component={Default}/>
         </Switch>
         </Provider> 
+       <div className='container'>
+         <div className='row'>
+           <div className='col-6'>column num one</div>
+           <div className='col-6'>
+             <span>
+               <i className="fas fa-home"/>
+             </span>
+           </div>
+         </div>
+       </div>
+
       </React.Fragment>
       
     );
