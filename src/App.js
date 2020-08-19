@@ -11,6 +11,7 @@ import store from './store'
 import { Provider } from "react-redux";
 import Navbar from "./Components/Navbar";
 import Basket from './Components/Basket'
+import Filter from './Components/Filter';
 
 
     
@@ -25,12 +26,15 @@ import Basket from './Components/Basket'
             <Navbar/>
 
             <Switch>
-            
+
               <Route exact path="/">
                 <Products />
               </Route>
               <Route  path="/cart">
                 <Basket />
+              </Route>
+              <Route  path="/filter">
+                <Filter />
               </Route>
             </Switch>
           </div>
