@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import Product from './Product'
+import Products from './Products';
 
-export default class ProductList extends Component {
-    render() {
-        return (
-            <div>
-            
-            <Product/>
-            </div>
-        )
-    }
-}
+export const  ProductList =()=>{
+
+            return (
+                <div>
+             <Products products={this.state.filteredProducts} handleAddToCart={this.handleAddToCart}/>
+                </div>
+            )
+    
+    
+}  
