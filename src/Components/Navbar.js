@@ -1,21 +1,54 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom'
+import logo from '../logo.png'
+import styled from 'styled-components'
+import React, { Component } from 'react'
+import {ButtonContainer} from './Button';
 
-
-const  Navbar=() =>{
-  return (
-    <nav className="nav-wrapper">
-    <div className="container">
+export default class Navbar extends Component {
+  render() {
+    return (
+      <NavWrapper className="navbar navbar-expand-sm 
+       navbar-dark px-sm-5">
+      {/* https://www.iconfinder.com/icons/4373281/artstation_logo_logos_icon */}
+      <Link to='/'>
+     <img src={logo} alt='store'
+     className='navbar-brand' />
+    
+      </Link>
+     <ul className="navbar-nav align-tems-center">
+        <li className='nav-item ml-5'>
+         <Link to='/' className='nav-link'> 
+           products
+         </Link>
+        </li>
       
-        
-        <ul className="right">
-            <li><Link to="/">Shopping</Link></li>
-            <li><Link to="/cart">My cart</Link></li>
-            <li><Link to="/cart"><i className="material-icons">shopping_cart</i></Link></li>
-        </ul>
-    </div>
-</nav>  
-  );
-}
+     </ul>
+     <Link to='/cart' className='ml-auto'>
+       <ButtonContainer>
+         <span className='mr-2'>
+         <i className="fas fa-cart-plus" />
+         </span>
+         my cart  
+       </ButtonContainer>
+     </Link>
+  
+      </NavWrapper>  
+    );
+  }
+  }
 
-export default Navbar;
+  const NavWrapper = styled.nav`
+  background:var(--mainBlue);
+  .nav-link{
+    color: nav(--mainWhite)!important;
+    font-size:1rem;
+    text-transform:capitalize;
+  }
+
+  `
+
+
+
+
+
