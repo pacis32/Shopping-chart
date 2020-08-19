@@ -1,7 +1,7 @@
 :root{
   /* custom variable color */
-  --mainblue:#2a2a72;
-  --lightblue:#009ffd;
+  --mainBlue:#2a2a72;
+  --lightBlue:#009ffd;
   --mainWhite:#f3f3f3;
   --mainYellow:#ffa400;
   --mainDark:#232528;
@@ -11,7 +11,7 @@
 body{
   font-family:  'Oswald', sans-serif !important;
    background: var(--mainWhite) ! important;
-   color: var(--mainDark) !important;
+   color: var(--mainDark) important;
 }
 
 .text-title{
@@ -21,10 +21,10 @@ body{
 }
 
 .text-blue{
-  color:var(--mainblue);
+  color:var(--mainBlue);
 
 }
 
 .text-bright{
-  color: var(--lightblue);
+  color: var(--lightBlue);
 }
