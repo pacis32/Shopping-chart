@@ -1,20 +1,16 @@
 import React from 'react';
 
 
-function Cart({cartList}) {
+function Cart() {
   return (
-    <div >
-     {cartList && cartList.length && cartList.map((item,index)=>{
-       return(
-         <div>
-           <h2>Name:</h2>{item.title}
-           </div>
-       )
-     })
+    <div className='text-title' >
+    The cart is empty
+    </div>
+    
+    
+     )
     }
     
-    </div>
-  );
-}
+   
 
 export default Cart;
